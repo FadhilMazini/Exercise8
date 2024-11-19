@@ -56,3 +56,20 @@ graph TD
     B -->|Melepaskan Semaphore| F
     C -->|Melepaskan Semaphore| F
     D -->|Operasi Independen| F[Status Sistem LED]
+```
+## Hasil Perilaku LED
+
+1. **Tugas LED Merah**:
+   - LED merah menyala selama 550ms saat mengakses resource bersama.
+   - LED merah padam setelah selesai mengakses resource dan jeda selama 550ms.
+
+2. **Tugas LED Hijau**:
+   - LED hijau menyala selama 200ms saat mengakses resource bersama.
+   - LED hijau padam setelah selesai mengakses resource dan jeda selama 200ms.
+
+3. **Tugas LED Biru**:
+   - LED biru menyala hanya jika terjadi kontensi resource (dua tugas mencoba mengakses resource bersamaan).
+   - LED biru padam segera setelah resource bebas kembali.
+
+4. **Tugas LED Oranye**:
+   - LED oranye berkedip dengan interval 50ms untuk menunjukkan bahwa sistem berjalan normal.

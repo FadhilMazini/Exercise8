@@ -45,6 +45,7 @@ Fokus utama proyek ini adalah melindungi bagian kode kritis di mana beberapa tug
 - **Tugas Independen**: Tugas LED Oranye beroperasi secara independen, berfungsi sebagai indikator status sistem.
 
 ## Diagram Alur Kerja
+![Screenshot 2024-12-04 154011](https://github.com/user-attachments/assets/cecd0b29-53e7-47a4-a305-84bdcef357f0)
 
 ```mermaid
 graph TD
@@ -57,6 +58,9 @@ graph TD
     C -->|Melepaskan Semaphore| F
     D -->|Operasi Independen| F[Status Sistem LED]
 ```
+## Dokumentasi
+![WhatsApp Video 2024-12-04 at 08 43 20_3e067552](https://github.com/user-attachments/assets/c5191e5c-6ce3-462f-b50a-6e6ab3950abd)
+
 ## Hasil Perilaku LED
 
 1. **Tugas LED Merah**:
